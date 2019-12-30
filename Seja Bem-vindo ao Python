@@ -1,0 +1,196 @@
+print('Olá! Seja bem-vindo ao Python!')
+print('----------------------------- OBSERVAÇÃO-------------------------------')
+print('Responda as perguntas abaixo com sim ou não. EXCETO  SEU NOME E IDADE!!')
+print('-----------------------------------------------------------------------')
+r = input('Vamos conversar um pouco?')
+if r == 'não' or r == 'nao' or r == "n":
+    print('Tudo bem! Fica para próxima!')
+    print(exit())
+elif r == 'sim' or r == 's':
+    print('Tudo certo vamos começar!')
+else:
+    print('Você digitou errado. Responda novamente!')
+    errado = 1
+    while errado == 1:
+        r = input('Vamos conversar um pouco?')
+        if r == 'não' or r == 'nao':
+            print('Tudo bem! Fica para próxima!')
+            print(exit())
+        elif r == 'sim' or r == 's':
+            print('Tudo certo vamos começar!')
+            errado = 0
+        else:
+            correto = 1
+        if errado == 0: break
+print('-----------------------------------------------------------------------------')
+nome = input('Qual seu nome?')
+print('Prazer em te conhecer {}!'.format(nome))
+situacao = input('Tudo bem com você?')
+if situacao == 'sim' or situacao == 's':
+    print('Que bom meu amigo(a)!')
+elif situacao == 'não' or situacao == 'nao' or situacao == 'n':
+    print('Poxa! Que pena gostaria de ajudar, mas não posso.')
+    print('Enfim..')
+else:
+    print('Você digitou errado. Responda novamente!')
+    errado = 1
+    while errado == 1:
+        situacao = input('Tudo bem com você?')
+        if situacao == 'sim' or situacao == 's':
+            print('Que bom meu amigo(a)!')
+            errado = 0
+        elif situacao == 'não' or situacao == 'nao' or situacao == 'n':
+            print('Poxa! Que pena gostaria de ajudar, mas não posso.')
+            print('Enfim..')
+            errado = 0
+        else:
+            errado = 1
+        if errado == 0: break
+print('----------------------------------------------------------------------------------------------------')
+idade = int(input('Quantos anos você tem?'))
+if idade <= 16:
+    print('Você é bem jovem coleguinha!')
+    print('Eu tenho 30 anos, fui criado em 1989 por Guido Van Hosum.')
+else:
+    print('Está ficando velho em coleguinha! KK')
+    print('Eu tenho 30 anos, fui criado em 1989 por Guido Van Hosum.')
+print('----------------------------------------------------------------------------------------------------')
+animal = input('Você gosta de animais?')
+if animal == 'sim' or animal == 's':
+    errado = 0
+    animal1 = input('Interesante. Posui algum em sua casa?')
+    if animal1 == 'sim' or animal1 == 's':
+        print('Hm.. Que bom!')
+    elif animal1 == 'não' or animal1 == 'nao' or animal1 == 'n':
+        print('Sei como é!')
+        animal2 = input('Pretende ter algum dia?')
+        if animal2 == 'sim' or animal2 == 's' or animal2 == 'talvez':
+            print('É bom ter mais uma companhia em casa.')
+        elif animal2 == 'não' or animal2 == 'nao' or animal2 == 'n':
+            print('Entendo.. ')
+        else:
+            print('Você digitou errado. Responda novamente!')
+            errado = 1
+            while errado == 1:
+                animal2 = input('Pretende ter algum dia?')
+                if animal2 == 'sim' or animal2 == 's' or animal2 == 'talvez':
+                    print('É bom ter mais uma companhia em casa.')
+                    errado = 0
+                elif animal2 == 'não' or animal2 == 'nao' or animal2 == 'n':
+                    print('Entendo.. ')
+                    errado = 0
+                else:
+                    errado = 1
+                if errado == 0: break
+    else:
+        print("Você digitou errado. Responda novamente!")
+        errado = 1
+        while errado == 1:
+            animal1 = input('Interesante. Posui algum em sua casa?')
+            if animal1 == 'sim' or animal1 == 's':
+                print('Hm.. Que bom!')
+                errado = 0
+            elif animal1 == 'não' or animal1 == 'nao' or animal1 == 'n':
+                print('Sei como é!')
+                errado = 0
+                animal2 = input('Pretende ter algum dia?')
+                if animal2 == 'sim' or animal2 == 's' or animal2 == 'talvez':
+                    print('É bom ter mais uma companhia em casa.')
+                    errado = 0
+                elif animal2 == 'não' or animal2 == 'nao' or animal2 == 'n':
+                    print('Entendo.. ')
+                    errado = 0
+                else:
+                    print('Você digitou errado. Responda novamente!')
+                    errado = 1
+                    while errado == 1:
+                        animal2 = input('Pretende ter algum dia?')
+                        if animal2 == 'sim' or animal2 == 's' or animal2 == 'talvez':
+                            print('É bom ter mais uma companhia em casa.')
+                            errado = 0
+                        elif animal2 == 'não' or animal2 == 'nao' or animal2 == 'n':
+                            print('Entendo.. ')
+                            errado = 0
+                        else:
+                            errado = 1
+                        if errado == 0: break
+            else:
+                errado = 1
+            if errado == 0: break
+elif animal == 'não' or animal == 'nao' or animal == 'n':
+    print('Entendo.. ')
+    errado = 0
+else:
+    print('Você digitou errado. Responda novamente!')
+    errado = 1
+    while errado == 1:
+        animal = input('Você gosta de animais?')
+        if animal == 'sim' or animal == 's':
+            errado = 0
+            animal1 = input('Interesante. Posui algum em sua casa?')
+            if animal1 == 'sim' or animal1 == 's':
+                print('Hm.. Que bom!')
+            elif animal1 == 'não' or animal1 == 'nao' or animal1 == 'n':
+                print('Sei como é!')
+                animal2 = input('Pretende ter algum dia?')
+                if animal2 == 'sim' or animal2 == 's' or animal2 == 'talvez':
+                    print('É bom ter mais uma companhia em casa.')
+                elif animal2 == 'não' or animal2 == 'nao' or animal2 == 'n':
+                    print('Entendo.. ')
+                else:
+                    print('Você digitou errado. Responda novamente!')
+                    errado = 1
+                    while errado == 1:
+                        animal2 = input('Pretende ter algum dia?')
+                        if animal2 == 'sim' or animal2 == 's' or animal2 == 'talvez':
+                            print('É bom ter mais uma companhia em casa.')
+                            errado = 0
+                        elif animal2 == 'não' or animal2 == 'nao' or animal2 == 'n':
+                            print('Entendo.. ')
+                            errado = 0
+                        else:
+                            errado = 1
+                        if errado == 0: break
+        elif animal == 'não' or animal == 'nao' or animal == 'n':
+            print('Entendo.. ')
+            errado = 0
+        else:
+            errado = 1
+        if errado == 0: break
+print('-------------------------------------------------------------------------------------------------------')
+final = input('Bom.. Era iso que tinha a perguntar, somente para fazer um teste. Gostou da nossa "conversa"?')
+if final == 'não' or final == 'nao' or final == 'n':
+    print('Er.. Acontece. Tenho que ir agora.')
+    print('----------------------------------------')
+    print('Até mais {}!'.format(nome))
+    print('----------------- FIM ------==----------')
+    input(' ')
+elif final == 'sim' or final == 's':
+    print('Que ótimo! Tenho que ir agora.')
+    print('----------------------------------------')
+    print('Até mais {}!'.format(nome))
+    print('----------------- FIM ------------------')
+    input(' ')
+else:
+    print('Você digitou errado. Responda novamente!')
+    errado = 1
+    while errado == 1:
+        final = input('Gostou da nossa "conversa"?')
+        if final == 'não' or final == 'nao' or final == 'n':
+            print('Er.. Acontece. Tenho que ir agora.')
+            print('----------------------------------------')
+            print('Até mais {}!'.format(nome))
+            print('----------------- FIM ------------------')
+            input(' ')
+        elif final == 'sim' or final == 's':
+            print('Que ótimo! Tenho que ir agora.')
+            print('----------------------------------------')
+            print('Até mais {}!'.format(nome))
+            print('----------------- FIM ------------------')
+            input(' ')
+        else:
+            errado = 1
+        if errado == 0: break
+        print('----------------- FIM ------------------')
+        input(' ')
+'''-----------------------------------------------------------------------------------------------------------------'''
